@@ -1,7 +1,7 @@
 {
   "name": "shaw-and-partners-test",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-esm src/index.ts",
