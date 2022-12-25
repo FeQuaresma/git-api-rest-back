@@ -31,7 +31,6 @@ app.get("/api/users/:username/details", async (req: Request, res: Response) => {
   const userDetails = await octokit.request(
     `https://api.github.com/users/${username}`
   );
-  console.log(userDetails.data)
   res.json(userDetails.data);
 });
 
