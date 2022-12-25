@@ -16,8 +16,9 @@ app.use(
     origin: "*",
   })
 );
-
-app.use("/", "working app")
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World")
+})
 
 app.get("/api/users", async (req: Request, res: Response) => {
   const since = req.query.since;
