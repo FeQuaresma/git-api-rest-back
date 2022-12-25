@@ -17,6 +17,8 @@ app.use(
   })
 );
 
+app.use("/", "working app")
+
 app.get("/api/users", async (req: Request, res: Response) => {
   const since = req.query.since;
   const per_page = req.query.per_page;
