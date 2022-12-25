@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World")
+  res.send("Github API Rest, Server ON")
 })
 
 app.get("/api/users", async (req: Request, res: Response) => {
